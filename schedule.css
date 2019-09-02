@@ -1,0 +1,51 @@
+* {
+    font-family: Arial;
+}
+
+.week-data {
+    text-align: center;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 55%;
+}
+
+th {
+    height: 50px;
+    background-color: green;
+    color: white;
+}
+
+th, h2 {
+    text-shadow: 0 1px 0 black;
+}
+
+table tr td:nth-child(1) {
+    word-break: break-all;
+}
+
+td.number, td.day {
+    text-align: center;
+    font-weight: bold;
+}
+
+div.subject {
+    font-weight: bold;
+}
+
+div.teacher {
+    font-style: italic;
+}
+
+div.place, div.teacher {
+    font-size: 14px;
+}
+
+div.empty {
+    opacity: 0;
+}
