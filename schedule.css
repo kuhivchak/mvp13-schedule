@@ -49,3 +49,9 @@ div.place, div.teacher {
 div.empty {
     opacity: 0;
 }
+
+#heart {
+    width: 48px;
+    height: 48px; 
+    visibility: hidden;
+}
