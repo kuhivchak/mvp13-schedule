@@ -30,3 +30,12 @@ animation();
 	   		elementByClass[i].style.backgroundColor = color;
 	 	 }
 	}
+
+	function showHeart() {
+		var heartElement = document.getElementById('heart');
+  	    if (heartElement.style.visibility == 'visible') {
+    		heartElement.style.visibility = 'hidden';
+  		} else {
+    		heartElement.style.visibility = 'visible';
+  		}
+	}
