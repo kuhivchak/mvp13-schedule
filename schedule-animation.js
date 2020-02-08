@@ -1,21 +1,17 @@
 animation();
 	function animation() {
 		var currentDate = new Date();
-		var firstSeptemberDate = new Date("9/1/2019");
-		var numberDiff = daysDiff(firstSeptemberDate, currentDate);
-		var numerator = ((numberDiff - currentDate.getDay()) < 2) || (((numberDiff - currentDate.getDay()) % 2) === 0);
-		var dynamicElements;
-
-		if (numerator) {
-			dynamicElements = document.getElementsByClassName("numerator");
-		} else {
-			dynamicElements = document.getElementsByClassName("denominator");
-		
-		}
-
+		var eightFebruaryDate = new Date("2/9/2020");
+		var numberDiff = daysDiff(eightFebruaryDate, currentDate);
+		var denominator = (((numberDiff / 7) % 2) < 1);
+		var dynamicElements = denominator ? document.getElementsByClassName("denominator") : document.getElementsByClassName("numerator");
 		setBackgroudColor(dynamicElements, "lightgreen");
 		var staticElements = document.getElementsByClassName("container");
 		setBackgroudColor(staticElements, "lightgreen");
+		if (studyDay(currentDate)) {
+			var dayElement = document.getElementsByClassName(getCurrentWeekDayInFormat('long').toLowerCase());
+			setBackgroudColor(dayElement, "lightgreen");
+		}
 	}
 
 	function daysDiff(date1, date2) {

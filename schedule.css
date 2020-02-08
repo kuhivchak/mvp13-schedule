@@ -2,7 +2,7 @@
     font-family: Arial;
 }
 
-.week-data {
+.week-date, .week-text, .number, .day-block, .time {
     text-align: center;
 }
 
@@ -12,7 +12,7 @@ table, td, th {
 
 table {
     border-collapse: collapse;
-    width: 55%;
+    width: 65%;
 }
 
 th {
@@ -29,16 +29,34 @@ table tr td:nth-child(1) {
     word-break: break-all;
 }
 
-td.number, td.day {
+.number, .day-name {
     text-align: center;
     font-weight: bold;
+}
+
+.day-name {
+    font-size: 16px;
+}
+
+.day-date {
+    font-size: 12px;
+}
+
+.day-block {
+    transform: rotate(-90deg);
+}
+
+.time {
+    font-size: 14px;
+    margin-top: 10%;
+    font-style: italic;
 }
 
 div.subject {
     font-weight: bold;
 }
 
-div.teacher {
+div.teacher, .day-date {
     font-style: italic;
 }
 
@@ -50,11 +68,15 @@ div.empty {
     opacity: 0;
 }
 
+.numerator, .denominator, .container {
+    padding-left: 1em;
+}
+
 #heart {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 48px;
+    width: 70px;
     height: 48px; 
     visibility: hidden;
 }
