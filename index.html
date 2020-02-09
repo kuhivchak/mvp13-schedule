@@ -14,14 +14,14 @@
 					<th>Пара</th>
 				</tr>
 				<!-- MONDAY -->
-				<tr class="monday">
+				<tr class="day-row monday">
 					<td class="day-block" rowspan="6">
 						<div class="day-name">Понеділок</div>
 						<div id="monday-date" class="day-date"></div>
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block monday" rowspan="2">
+					<td class="number-block dynamic monday" rowspan="2">
 						<div class="number">1</div>
 						<div class="time">08:30</div>
 					</td>
@@ -32,14 +32,14 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="denominator">
+					<td class="denominator empty">
 						<div class="empty subject">-</div>
 						<div class="empty teacher">-</div>
 						<div class="empty place">-</div>
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block monday">
+					<td class="number-block static monday">
 						<div class="number">2</div>
 						<div class="time">10:10</div>
 					</td>
@@ -50,7 +50,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block monday" rowspan="2">
+					<td class="number-block dynamic monday" rowspan="2">
 						<div class="number">3</div>
 						<div class="time">11:50</div>
 					</td>
@@ -61,21 +61,21 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="denominator">
+					<td class="denominator empty">
 						<div class="empty subject">-</div>
 						<div class="empty teacher">-</div>
 						<div class="empty place">-</div>
 					</td>
 				</tr>
 				<!-- TUESDAY -->
-				<tr class="tuesday">
+				<tr class="day-row tuesday">
 					<td class="day-block" rowspan="7">
 						<div class="day-name">Вівторок</div>
 						<div id="tuesday-date" class="day-date"></div>
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block tuesday">
+					<td class="number-block static tuesday">
 						<div class="number">1</div>
 						<div class="time">08:30</div>
 					</td>
@@ -86,7 +86,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block tuesday">
+					<td class="number-block static tuesday">
 						<div class="number">2</div>
 						<div class="time">10:10</div>
 					</td>
@@ -97,7 +97,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block tuesday" rowspan="2">
+					<td class="number-block dynamic tuesday" rowspan="2">
 						<div class="number">3</div>
 						<div class="time">11:50</div>
 					</td>
@@ -115,11 +115,11 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block tuesday" rowspan="2">
+					<td class="number-block dynamic tuesday" rowspan="2">
 						<div class="number">4</div>
 						<div class="time">13:30</div>
 					</td>
-					<td class="numerator">
+					<td class="numerator empty">
 						<div class="empty subject">-</div>
 						<div class="empty teacher">-</div>
 						<div class="empty place">-</div>
@@ -133,14 +133,14 @@
 					</td>
 				</tr>
 				<!-- WEDNESDAY -->
-				<tr class="wednesday">
+				<tr class="day-row wednesday">
 					<td class="day-block" rowspan="4">
 						<div class="day-name">Середа</div>
 						<div id="wednesday-date" class="day-date"></div>
 					</td>
 				</tr>
 				<tr>
-					<td class="number number-block wednesday">09:30</td>
+					<td class="number number-block static wednesday">09:30</td>
 					<td class="container">
 						<div class="subject">Фізичне виховання</div>
 						<div class="empty teacher">-</div>
@@ -148,7 +148,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block wednesday">
+					<td class="number-block static wednesday">
 						<div class="number">3</div>
 						<div class="time">11:50</div>
 					</td>
@@ -159,7 +159,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block wednesday">
+					<td class="number-block static wednesday">
 						<div class="number">4</div>
 						<div class="time">13:30</div>
 					</td>
@@ -170,14 +170,14 @@
 					</td>
 				</tr>
 				<!-- THURSDAY -->
-				<tr class="thursday">
+				<tr class="day-row thursday">
 					<td class="day-block" rowspan="5">
 						<div class="day-name">Четвер</div>
 						<div id="thursday-date" class="day-date"></div>
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block thursday" rowspan="2">
+					<td class="number-block dynamic thursday" rowspan="2">
 						<div class="number">1</div>
 						<div class="time">08:30</div>
 					</td>
@@ -195,7 +195,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block thursday">
+					<td class="number-block static thursday">
 						<div class="number">2</div>
 						<div class="time">10:10</div>
 					</td>
@@ -206,7 +206,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block thursday">
+					<td class="number-block static thursday">
 						<div class="number">3</div>
 						<div class="time">11:50</div>
 					</td>
@@ -217,18 +217,18 @@
 					</td>
 				</tr>
 				<!-- FRIDAY -->
-				<tr class="friday">
+				<tr class="day-row friday">
 					<td class="day-block" class="number" rowspan="6">
 						<div class="day-name">П'ятниця</div>
 						<div id="friday-date" class="day-date"></div>
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block friday" rowspan="2">
+					<td class="number-block dynamic friday" rowspan="2">
 						<div class="number">1</div>
 						<div class="time">08:30</div>
 					</td>
-					<td class="numerator">
+					<td class="numerator empty">
 						<div class="empty subject">-</div>
 						<div class="empty teacher">-</div>
 						<div class="empty place">-</div>
@@ -243,7 +243,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block friday" rowspan="2">
+					<td class="number-block dynamic friday" rowspan="2">
 						<div class="number">2</div>
 						<div class="time">10:10</div>
 					</td>
@@ -261,7 +261,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="number-block friday">
+					<td class="number-block static friday">
 						<div class="number">3</div>
 						<div class="time">11:50</div>
 					</td>
