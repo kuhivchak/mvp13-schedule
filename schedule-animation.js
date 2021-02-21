@@ -5,17 +5,17 @@ animation();
 		var numberDiff = daysDiff(eightFebruaryDate, currentDate);
 		var denominator = (((numberDiff / 7) % 2) < 1);
 		var dynamicSubjectElements = denominator ? document.getElementsByClassName("denominator") : document.getElementsByClassName("numerator");
-		setBackgroudColor(dynamicSubjectElements, "lightgreen");
+		setBackgroudColor(dynamicSubjectElements, "aquamarine");
 		var staticSubjectElements = document.getElementsByClassName("container");
-		setBackgroudColor(staticSubjectElements, "lightgreen");
+		setBackgroudColor(staticSubjectElements, "aquamarine");
 		var staticNumberBlocks = document.getElementsByClassName("static number-block");
-		setBackgroudColor(staticNumberBlocks, "lightgreen");
+		setBackgroudColor(staticNumberBlocks, "aquamarine");
 		var dynamicNumberBlocks = getNonEmptyNumberBlocks(dynamicSubjectElements);
-		setBackgroudColor(dynamicNumberBlocks, "lightgreen");
+		setBackgroudColor(dynamicNumberBlocks, "aquamarine");
 		if (studyDay(currentDate)) {
 			var todayDay = getCurrentWeekDayInFormat('long').toLowerCase();
 			var dayBlockElement = document.getElementsByClassName(todayDay + " day-row");
-			setBackgroudColor(dayBlockElement, "lightgreen");
+			setBackgroudColor(dayBlockElement, "aquamarine");
 		}
 	}
 
