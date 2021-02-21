@@ -12,13 +12,13 @@ table, td, th {
 
 table {
     border-collapse: collapse;
-    width: 65%;
+    width: 60%;
 }
 
 th {
     height: 50px;
-    background-color: green;
-    color: white;
+    background-color: mediumaquamarine;
+    color: azure;
 }
 
 th, h2 {
